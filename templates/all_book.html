@@ -1,0 +1,19 @@
+{% extends "layout.html"%}
+{% block body %}
+    <h2>Все книги</h2>
+    {%- for books in book%}
+        <ul>
+            <li>Книга: {{books.name}} </li>
+            <li>Автор: {{books.author}} </li>
+            <li>Дата издания: {{books.date}} </li>
+            <li>
+                <a href = "{{ url_for('books_by_janr', id_janr = books.janr.id) }}"> Жанр: {{books.janr.text}} </a>
+            </li>
+        </ul>    
+        <hr>
+    {%- endfor %}
+
+
+
+{% endblock %}
+
