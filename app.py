@@ -27,15 +27,118 @@ with app.app_context():
         )
         
     )
+    db.session.add(
+        Books(
+            author = "автор2",
+            name = "книга2",
+            janr = fentesi,
+        )
+        
+    )
     
     db.session.add(
         Books(
             author = "автор3",
-            name = "книга2",
+            name = "книга3",
             janr = fentesi,
         )
     )
-    
+    db.session.add(
+        Books(
+            author = "автор1",
+            name = "книга4",
+            janr = fentesi,
+        )
+        
+    )
+    db.session.add(
+        Books(
+            author = "автор1",
+            name = "книга5",
+            janr = fentesi,
+        )
+        
+    )
+    db.session.add(
+        Books(
+            author = "автор1",
+            name = "книга6",
+            janr = fantastic,
+        )
+        
+    )
+    db.session.add(
+        Books(
+            author = "автор1",
+            name = "книга7",
+            janr = fentesi,
+        )
+        
+    )
+    db.session.add(
+        Books(
+            author = "автор1",
+            name = "книга8",
+            janr = fantastic,
+        )
+        
+    )
+    db.session.add(
+        Books(
+            author = "автор1",
+            name = "книга9",
+            janr = fentesi,
+        )
+        
+    )
+    db.session.add(
+        Books(
+            author = "автор1",
+            name = "книга10",
+            janr = fentesi,
+        )
+        
+    )
+    db.session.add(
+        Books(
+            author = "автор1",
+            name = "книга11",
+            janr = fantastic,
+        )
+        
+    )
+    db.session.add(
+        Books(
+            author = "автор1",
+            name = "книга12",
+            janr = fentesi,
+        )
+        
+    )
+    db.session.add(
+        Books(
+            author = "автор1",
+            name = "книга13",
+            janr = fantastic,
+        )
+        
+    )
+    db.session.add(
+        Books(
+            author = "автор1",
+            name = "книга14",
+            janr = fentesi,
+        )
+        
+    )
+    db.session.add(
+        Books(
+            author = "автор1",
+            name = "книга15",
+            janr = fantastic,
+        )
+        
+    )
 
     db.session.commit()
 
