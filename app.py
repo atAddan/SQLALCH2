@@ -9,7 +9,7 @@ app= Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///bibl.db'
 db.init_app(app)
 
-with app.app_context():
+""" with app.app_context():
     db.drop_all()
     db.create_all()
 
@@ -140,7 +140,7 @@ with app.app_context():
         
     )
 
-    db.session.commit()
+    db.session.commit() """
 
 
 @app.route("/")
